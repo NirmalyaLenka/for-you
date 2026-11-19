@@ -1,26 +1,50 @@
 # for-you
-## not a profesnal git hub repo just for personal uses.
 
+A personal, single-page birthday greeting built with HTML, CSS, and JavaScript. This repository is intended for personal use rather than as a reusable application framework.
 
----
+**Live page:** https://nirmalyalenka.github.io/for-you/
 
-## Skills & technologies
+## What the page contains
 
-`HTML/CSS`
+- A birthday-letter layout with a personalized message.
+- Sections for memories, a relationship timeline, and reasons for appreciation.
+- Decorative animated petals and heart effects.
+- Interactive celebration effects, including confetti/fireworks and a small chime.
+- A love-note dialog that can be opened and closed from the page.
 
+The implementation is contained in the root **index.html**; styles and scripts are embedded in that file. The page imports Playfair Display and Lato from Google Fonts, so those fonts require a network connection. System-font fallbacks are defined in the page.
+
+## Run locally
+
+No package manager, build step, or server-side runtime is defined in this repository.
+
+1. Clone or download the repository.
+2. Open **index.html** in a modern browser.
+3. If you prefer to serve it locally, run a static server from the repository root:
+
+       python -m http.server 8000
+
+4. Open http://localhost:8000 in the browser.
+
+The chime and other interactive effects should be tried after a user gesture because browsers may restrict audio or other media before interaction.
 
 ## Repository structure
 
-Key files and folders (not exhaustive):
+| Path | Purpose |
+|---|---|
+| **index.html** | Complete page markup, embedded styles, message content, and JavaScript interactions |
+| **README.md** | Project overview and usage notes |
 
-- `README.md`
-- `index.html`
+## Privacy and sharing
 
+This is a personalized page, not a privacy-preserving messaging service. Review the message text and any embedded personal content before sharing the public repository or its GitHub Pages URL. Do not add private photographs, contact details, or other information that the intended recipient has not agreed to publish.
 
-## How it works
+## Limitations and verification
 
-Start with the main source files listed in the repository structure. Review configuration and dependencies before building or running the code.
-
+- The page is static; no backend, account system, or server-side message storage is included.
+- The external Google Fonts request may not load offline; the page has font fallbacks.
+- No automated browser test or accessibility audit is claimed by this documentation update.
+- The page was inspected as source only; interactive behavior has not been tested in a browser during this maintenance pass.
 
 ## Maintenance & Audit
 
